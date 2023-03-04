@@ -202,14 +202,13 @@ local config = {
       ["<leader>bj"] = { "<cmd>BufferLinePick<cr>", desc = "Pick to jump" },
       ["<leader>bt"] = { "<cmd>BufferLineSortByTabs<cr>", desc = "Sort by tabs" },
       -- quick save
-      -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+      ["<C-s>"] = { ":w!<cr>", desc = "Save File" }, -- change description but the same command
     },
     t = {
       -- setting a mapping to false will disable it
       -- ["<esc>"] = false,
     },
   },
-
 
   -- Configure plugins
   plugins = {
@@ -270,14 +269,13 @@ local config = {
   luasnip = {
     -- Extend filetypes
     filetype_extend = {
-      javascript = { "javascriptreact" , "javascript"},
-      typescript = { "typescriptreact" , "typescript","javascript", "javascriptreact"},
-
+      javascript = { "javascriptreact", "javascript" },
+      typescript = { "typescriptreact", "typescript", "javascript", "javascriptreact" },
     },
     -- Configure luasnip loaders (vscode, lua, and/or snipmate)
     vscode = {
       -- Add paths for including more VS Code style snippets in luasnip
-      paths = {"./lua/user/snippets"},
+      paths = { "./lua/user/snippets" },
     },
   },
 
