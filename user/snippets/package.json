@@ -218,6 +218,16 @@
         "language": [
           "javascript",
           "javascriptreact",
+          "typescript",
+          "typescriptreact"
+        ],
+        "path": "./snippets/javascript/javascript_test.json"
+      },
+
+      {
+        "language": [
+          "javascript",
+          "javascriptreact",
           "vue",
           "svelte"
         ],
